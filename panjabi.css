@@ -1,0 +1,194 @@
+.panjabi-section1{
+     display: flex;
+    justify-content: space-evenly;
+}
+.s{
+    width: 400px;
+     /* border: 3px solid rgb(167, 151, 8) ; */
+    height: 550px;
+    
+}
+.box1-panjabi-imag{
+    background-image: url(262002__4_5__20250413040545209_width_1024.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.box2-panjabi-imag{
+  background-image: url(232022__4_5__20240215083112086_width_1024.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+     margin-left: 10px;
+     margin-right: 10px;
+     
+}
+.box3-panjabi-imag{
+background-image: url(index_files/232011_4_5.width-1024.format-jpeg.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+.box4-panjabi-imag{
+background-image: url(index_files/262005__4_5__20250522131437127_width_1024.jpg);
+background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+.box5-panjabi-imag{
+    background-image: url(index_files/262007__4_5__20250720045714873_width_1024.jpg);
+     background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+    
+}
+.product-price{
+    color: black;
+    font-size: large;
+    margin-top: 1px;
+}
+.pan{
+    margin-top: -20px;
+    margin-left: 13px;
+}
+
+/* ********************
+#################### */
+
+.panjabi-section2{
+     display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.sos{
+    width: 400px;
+     /* border: 3px solid rgb(167, 151, 8) ; */
+    height: 550px;
+}
+.box1-panjabi-imag1{
+    background-image:url(242519__4_5__20250122130412552_width_1024.jpg) ;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box2-panjabi-imag2{
+  background-image:url(232534_4_5.width-1024.format-jpeg.jpg) ;
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box3-panjabi-imag3{
+background-image:url(232503_4_5.width-1024.format-jpeg.jpg) ;
+ background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box4-panjabi-imag4{
+background-image:url(242535__4_5__20240922130032516_width_1024.jpg) ;
+
+   background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box5-panjabi-imag5{
+    background-image: url(262507__4_5__20250325082836538_width_1024.jpg) ;
+     background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.product-price{
+    color: black;
+    font-size: 12px;
+    font-size: larger;
+    margin-top: 1px;
+}
+
+.pan{
+    margin-top: -20px;
+    margin-left: 13px;
+} 
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+.panjabi-section4{
+     display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.os{
+    width: 400px;
+     /* border: 3px solid rgb(167, 151, 8) ; */
+    height: 550px;
+    
+}
+.box1-panjabi-imag5{
+    background-image:url(257043__4_5__20250902063209973_width_1024.jpg) ;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box2-panjabi-imag4{
+  background-image: url(267032__4_5__20250902063639259_width_1024.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box3-panjabi-imag6{
+background-image:url(267044__4_5__20250921092902236_width_1024.jpg) ;
+ background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box4-panjabi-imag2{
+background-image:url(257014__4_5__20251028044558956_width_1024.jpg) ;
+
+   background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box5-panjabi-imag1{
+    background-image: url(267056__4_5__20251028054912902_width_1024.jpg) ;
+     background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+
+.product-price{
+    color: black;
+    font-size: 12px;
+    font-size: larger;
+    margin-top: 1px;
+   
+}
+.pan{
+    margin-top: -20px;
+    margin-left: 13px;
+}

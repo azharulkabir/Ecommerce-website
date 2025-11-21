@@ -130,21 +130,22 @@ span{
     background-size: cover;
     
  }
- .hero-section button{
-  width: 250px;
-  background-color:whitesmoke;
-  color: rgb(119, 230, 119);
-  border:none ;
-  font-size: 18px;
-  height: 55px;
- 
- }
+.hero-section button{
+ width: 250px;
+ background-color:rgb(216, 233, 221);
+ color: #000;
+ border:none ;
+ font-size: 18px;
+ height: 55px;
+
+}
 
  .new{
    
    
     margin-left:45%;
     padding-top: 20%;
+   
     
 } 
 .ari{
@@ -152,6 +153,7 @@ span{
    
     margin-left:45%;
     padding-top: 2%;
+   
 }
 /** another **/
 
@@ -165,29 +167,77 @@ span{
     height: 700px ;
     border: 3px solid white ;
     width:1145px;
+    position: relative;
+}
+.shop-section a.panjabi-link,
+.shop-section2 a.panjabi-link {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
 }
  .box1-image{
    background-image: url(group_fold_257010__257011__3_2__min_20241029063115700.jpg);
    height: 101%;
    background-size: cover;
-
+   cursor: pointer;
+   transition: opacity 0.3s ease;
+   display: block;
+   pointer-events: none;
  }
  .sha{
     margin-left: 35%;
     align-items: center;
     margin-top: 13px;
-   
+    color: #000;
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
+ }
+ .panjabi-link .sha,
+ .panjabi-link .lux,
+ .panjabi-link .pla {
+    color: #000;
+    text-decoration: none;
+ }
+ .panjabi-link:hover .box1-image,
+ .panjabi-link:hover .box2-image,
+ .panjabi-link:hover .box1-ima,
+ .panjabi-link:hover .box2-ima,
+ .panjabi-link:hover .box3-ima,
+ .panjabi-link:hover .box4-ima {
+    opacity: 0.9;
+ }
+ .panjabi-link:hover .sha,
+ .panjabi-link:hover .lux,
+ .panjabi-link:hover .pla {
+    text-decoration: underline;
  }
  .box2-image{
     background-image:url(group_fold____242534__242535__3_2__min_20241009100003872.jpg) ;
     height: 101%;
     background-size: cover;
-  
- }
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: block;
+    pointer-events: none;
+  }
+  .box2-image:hover{
+    opacity: 0.9;
+  }
  .lux{
     margin-left: 50%;
     align-items: center;
     margin-top: 13px;
+    color: #000;
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
  }
  /** another **/
  
@@ -203,31 +253,64 @@ span{
     height:380px;
     border: 3px solid white ;
     width:578 px;
+    position: relative;
  }
  .box1-ima{
   background-image:url(group_247071__247072__4_5__min_20241029080635420.jpg) ;
   background-size: cover;
   height: 180%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  display: block;
+  pointer-events: none;
+ }
+ .box1-ima:hover{
+  opacity: 0.9;
  }
  .box2-ima{
    background-image: url(group_242536__242537__4_5__min_20241014124604149.jpg);
    height: 180%;
    background-size: cover;
+   cursor: pointer;
+   transition: opacity 0.3s ease;
+   display: block;
+   pointer-events: none;
+ }
+ .box2-ima:hover{
+   opacity: 0.9;
  }
  .box3-ima{
   background-image:url(group____247038__247039__4___5__min_20241007074751200.jpg) ;
   height: 180%;
   background-size: cover;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  display: block;
+  pointer-events: none;
+ }
+ .box3-ima:hover{
+  opacity: 0.9;
  }
  .box4-ima{
   background-image: url(group_242023___242024__4_5__min_20241009100004712.jpg);
   height: 180%;
   background-size: cover;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  display: block;
+  pointer-events: none;
+ }
+ .box4-ima:hover{
+  opacity: 0.9;
  }
 .pla{
     margin-left: 50%;
     align-items: center;
      margin-top: 15px; 
+     color: #000;
+     pointer-events: none;
+     position: relative;
+     z-index: 1;
 }
  /** box 3 **/
  .shop-sectionstra{
@@ -248,33 +331,58 @@ span{
    background-size: contain; 
   height: 190%;
   background-repeat: no-repeat;
-
-
+  cursor: pointer;
+  transition: opacity 0.3s ease;
  }
+.box1-imge:hover{
+  opacity: 0.9;
+}
  .box2-imge{
   background-image: url(group__249769__249770__4_5__20250810101141609.jpg);
    height: 190%;
    background-size: contain; 
     background-repeat: no-repeat;
-   
+   cursor: pointer;
+   transition: opacity 0.3s ease;
  }
+.box2-imge:hover{
+  opacity: 0.9;
+}
  .box3-imge{
   background-image: url(group__251612___251613__4_5__20251013122130246.jpg);
   height: 190%;
   background-size: contain;
     background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
  }
+.box3-imge:hover{
+  opacity: 0.9;
+}
  .box4-imge{
   background-image: url(group_248909__248910__4_5__20250810101301699.jpg);
   height: 190%;
   background-size: contain;
    background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
  }
+.box4-imge:hover{
+  opacity: 0.9;
+}
 
 .vele{
     margin-left: 40%;
     align-items: center;
      margin-top: -26px; 
+}
+.vele a{
+    color: #000 !important;
+    text-decoration: none;
+}
+.vele a:hover{
+    color: #000 !important;
+    text-decoration: underline;
 }
 
 /* ++++++ */
@@ -319,6 +427,22 @@ span{
     margin-left: 50%;
     align-items: center;
      margin-top: -26px; 
+    color: #000;
+    font-weight: 600;
+}
+
+.collection-link {
+    text-decoration: none;
+}
+
+.collection-link .vel,
+.collection-link .velvet {
+    text-decoration: none;
+}
+
+.collection-link:hover .vel,
+.collection-link:hover .velvet {
+    text-decoration: none;
 }
 /* ********** */
  .new-shop{
@@ -342,10 +466,22 @@ span{
    background-size: cover;
   
  }
- .shew{
+.shew{
     margin-left: 35%;
     margin-top: 15px;
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: transparent;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
  }
+.collection-link .shew{
+    text-decoration: none;
+    border-bottom: none;
+    color: #000;
+}
  .box2-im{
     background-image:url(group__247543__247544__3_2__20241029062301242.jpg) ;
     height: 120%;
@@ -355,6 +491,7 @@ span{
  .velvet{
     margin-left: 35%;
     margin-top: 15px;
+    color: #000;
  }
  /** new box **/
 
@@ -403,7 +540,13 @@ background-size: cover;
   height: 40px;
   margin-left: 32%;
   margin-top: 15px;
+  font-weight: 600;
  }
+.pw button,
+.sw button,
+.pvw button {
+    color: #000;
+}
  /** another **/
  .new-shop3{
     background-color: whitesmoke;
@@ -417,8 +560,11 @@ background-size: cover;
     height: 100%;
     background-size: cover;
     width: 185%;
-   
-   
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.box1-ig:hover{
+    opacity: 0.9;
 }
 .pr {
       margin-top: 4px;  
@@ -427,6 +573,15 @@ background-size: cover;
     height: 40px;
     width: 260px;
     border:none ;
+}
+.pr a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.pr a:hover{
+    color: rgb(67, 130, 185);
+    text-decoration: underline;
 }
  
 /** another **/
@@ -461,11 +616,38 @@ background-size: cover;
     padding-top: 15px;
     font-size: 18px; 
    }
+
+   .bussi a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+   }
+
+   .bussi a:hover {
+    color: #000;
+    text-decoration: none;
+   }
    /** another **/
    .shirt-section{
         display: flex;
         justify-content: space-evenly;
         margin-top: 30px;
+   }
+   .shirt-section a.polo-link {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+   }
+   .polo-button-text {
+    margin-left: 30%;
+    font-size: 18px;
+    margin-top: 12px;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
    }
    .g{
     height: 560px;
@@ -476,27 +658,58 @@ background-size: cover;
      background-image: url(group____244601__244602__4_5__20240620092639692.jpg);
      height: 100%;
      background-size: cover;
+     cursor: pointer;
+     transition: opacity 0.3s ease;
+     display: block;
+   }
+   .box1-ia:hover{
+     opacity: 0.9;
    }
   
 .box2-ia{
     background-image: url(group__244605__244606__4_5__20240630094843382.jpg);
     height: 100%;
     background-size: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: block;
+  }
+  .box2-ia:hover{
+    opacity: 0.9;
   }
 .box3-ia{
     background-image:url(group__244607__244608__4_5__20240620092637332.jpg) ;
     height: 100%;
     background-size: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: block;
+  }
+  .box3-ia:hover{
+    opacity: 0.9;
   }
 .box4-ia{
     background-image:url(group____244613__244614__4_5___1__20240620092641497.jpg) ;
     height: 100%;
     background-size: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: block;
+  }
+  .box4-ia:hover{
+    opacity: 0.9;
   }
    .shirt-section button{
    margin-left: 30%;
    font-size: 18px;
   margin-top: 12px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  }
+   .shirt-section a{
+    text-decoration: none;
+    color: inherit;
   } 
   
   /** annother **/
@@ -511,11 +724,25 @@ background-size: cover;
     height: 100%;
     background-size: cover;
    width: 185%;
+   cursor: pointer;
+   transition: opacity 0.3s ease;
+  }
+  .box1-imw:hover{
+    opacity: 0.9;
   }
   .watchs{
     margin-left: 80%;
     font-size: 18px;
     margin-top: 3px;
+  }
+  .watchs a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .watchs a:hover{
+    color: rgb(67, 130, 185);
+    text-decoration: underline;
   }
    /** another box **/
    .jeans{
@@ -682,4 +909,100 @@ background-size: cover;
 .cent{
     padding-top: 14px;
     font-size: 17px;
+}
+
+/* ============================================
+   JavaScript Enhanced Styles
+   ============================================ */
+
+/* Navbar scroll transition */
+.navbar {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Product box hover effects */
+.box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Search input focus */
+.search-input:focus {
+    outline: none;
+}
+
+/* Cart icon hover */
+.nav-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+/* Panel ops responsive */
+@media (max-width: 768px) {
+    .panel-ops {
+        display: none;
+    }
+    
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .hero-section {
+        height: 600px;
+    }
+    
+    .shop-section, .shop-section2 {
+        flex-direction: column;
+    }
+    
+    .box {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+}
+
+/* Loading animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+/* Global button styles */
+button {
+    color: #000;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Footer links hover */
+.foot-panel1 a:hover {
+    color: rgb(67, 130, 185);
+    text-decoration: underline;
+}
+
+/* Social media icons hover */
+.do i:hover {
+    transform: scale(1.2);
+    color: rgb(67, 130, 185);
+    transition: all 0.3s;
 }

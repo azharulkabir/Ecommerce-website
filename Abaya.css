@@ -1,0 +1,128 @@
+ .Abaya-section1{
+     display: flex;
+    justify-content: space-evenly;
+}
+.s{
+    width: 400px;
+     /* border: 3px solid rgb(167, 151, 8) ; */
+    height: 550px;
+    
+}
+.box1-abaya-imag{
+    background-image:url(2512541__4_5__20250203105558236_width_1024.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.box2-abaya-imag{
+  background-image:url(2413517__4_5__20240307094022435_width_1024.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+     margin-left: 10px;
+     margin-right: 10px;
+     
+}
+.box3-abaya-imag{
+background-image:url(2512545__4_5__20250204061816815_width_1024.jpg) ;
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+.box4-abaya-imag{
+background-image: url(2512536__4_5__20250129112414915_width_1024.jpg);
+background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+.box5-abaya-imag{
+    background-image:url(2412538__4_5__20240408050842033_width_1024.jpg) ;
+     background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+    
+}
+.product-price{
+    color: black;
+    font-size: large;
+    margin-top: 1px;
+}
+.pan{
+    margin-top: -20px;
+    margin-left: 13px;
+}
+
+/* ********************
+#################### */
+
+.Abaya-section2{
+     display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.sos{
+    width: 400px;
+     /* border: 3px solid rgb(167, 151, 8) ; */
+    height: 550px;
+}
+.box1-abaya-imag1{
+    background-image:url(2512535__4_5__20250129094347111_width_1024.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box2-abaya-imag2{
+  background-image:url(2412521__4_5__20240314062022581_width_1024.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box3-abaya-imag3{
+background-image:url(2411503___4_5__20240324131813462_width_1024.jpg);
+ background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box4-abaya-imag4{
+background-image:url(2412537__4_5__20240408050838811_width_1024.jpg) ;
+
+   background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box5-abaya-imag5{
+    background-image: url(2411504___4_5__20240324131834124_width_1024.jpg) ;
+     background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.product-price{
+    color: black;
+    font-size: 12px;
+    font-size: larger;
+    margin-top: 1px;
+}
+
+.pan{
+    margin-top: -20px;
+    margin-left: 13px;
+}

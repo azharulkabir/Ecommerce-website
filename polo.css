@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.polo-page {
+    background-color: #f5f5f5;
+}
+
+body.polo-page header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body.polo-page .panel {
+    background-color: rgb(45, 109, 165);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.polo-content {
+    padding: 60px 20px 80px;
+}
+
+.polo-section1,
+.polo-section2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.polo-section2 {
+    margin-top: 20px;
+}
+
+.po,
+.po1,
+.popic {
+    flex: 1 1 240px;
+    max-width: 260px;
+    min-width: 220px;
+    height: 340px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.po:hover,
+.po1:hover,
+.popic:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+.box1-popic3,
+.box2-popic3,
+.box3-popic3,
+.box4-popic3,
+.box5-popic3,
+.box1-popic2,
+.box2-popic2,
+.box3-popic2 {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.box1-popic3 {
+    background-image: url(264605_n__4_5__20251005053638550_width_1024.jpg);
+}
+
+.box2-popic3 {
+    background-image: url(254625__4_5__20251013043113799_width_1024.jpg);
+}
+
+.box3-popic3 {
+    background-image: url(254623__4_5__20250720045459451_width_1024.jpg);
+}
+
+.box4-popic3 {
+    background-image: url(264603_n__4_5__20251005053634679_width_1024.jpg);
+}
+
+.box5-popic3 {
+    background-image: url(264604_n__4_5__20251005053636672_width_1024.jpg);
+}
+
+.box1-popic2 {
+    background-image: url(254625__4_5__20251013043113799_width_1024.jpg);
+}
+
+.box2-popic2 {
+    background-image: url(254501__4_5__20250526050034755_width_1024.jpg);
+}
+
+.box3-popic2 {
+    background-image: url(224517_4_5.width-1024.format-jpeg.jpg);
+}
+
+.polos1,
+.pols {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}

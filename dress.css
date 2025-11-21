@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.dress-page {
+    background-color: #f5f5f5;
+}
+
+body.dress-page header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body.dress-page .panel {
+    background-color: rgb(45, 109, 165);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dress-content {
+    padding: 60px 20px 80px;
+    background-color: #f5f5f5;
+}
+
+.Dress1{
+    display: flex;
+    background-color: #d3ddd3;
+    justify-content: space-evenly;
+   
+    
+}
+.hv{
+    height:550px;
+    width: 578px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+ }
+.box1-pict{
+  background-image: url(249304__4_5__20250701091154970_width_1024.jpg);
+   background-size: contain; 
+  height: 420px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  flex-shrink: 0;
+ }
+
+    .box2-pict{
+        background-image: url(249312__4_5__20250625071448376_width_1024.jpg);
+        background-size: contain; 
+        height: 420px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        flex-shrink: 0;
+    }
+
+    .box3-pict{
+        background-image: url(249315_up__4_5__20250709110040044_width_1024.jpg);
+        background-size: contain; 
+        height: 420px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        flex-shrink: 0;
+    }
+
+    .box4-pict{
+  background-image: url(249316_up__4_5__20250709110047656_width_1024.jpg);
+   background-size: contain; 
+  height: 420px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  flex-shrink: 0;
+    }
+
+.pi{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+    flex-shrink: 0;
+}
+.product-code{
+    font-size: 12px;
+    margin-top: 6px;
+    text-align: center;
+    color: #666;
+    flex-shrink: 0;
+}
+.price-container{
+    margin-top: 6px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+.product-price{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    display: inline-block;
+}
+.original-price{
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 10px;
+    display: inline-block;
+}
+.discount{
+    font-size: 14px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-left: 10px;
+    display: block;
+    margin-top: 5px;
+}
+.luxury-badge{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.premium-badge{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.sale-badge{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.brand-badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+.hv, .he{
+    position: relative;
+}
+
+ .Dress2{
+    display: flex;
+    background-color: #e2e7e2;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+}
+.he{
+    height:550px;
+    width:578px; 
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+ }
+
+
+      .box5-pict{
+        background-image: url(249318__4_5__20250624062143404_width_1024.jpg);
+         background-size: contain; 
+        height: 420px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        flex-shrink: 0;
+      }
+
+      .box6-pict{
+        background-image: url(249319__4_5__20250701091242697_width_1024.jpg);
+        background-size: contain; 
+        height: 420px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        flex-shrink: 0;
+      }
+
+      .box7-pict{
+        background-image: url(262801__4_5__20250921093042073_width_1024.jpg);
+        background-size: contain; 
+        height: 420px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        flex-shrink: 0;
+      }
+        .box8-pict{
+  background-image: url(249310__4_5__20250628092203758_width_1024.jpg);
+   background-size: contain; 
+  height: 420px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  flex-shrink: 0;
+    }
+
+    .pil{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+    flex-shrink: 0;
+}
+/* Link styles - keep black color */
+a{
+    color: #000 !important;
+    text-decoration: none;
+}
+a:hover{
+    color: #000 !important;
+    text-decoration: underline;
+}

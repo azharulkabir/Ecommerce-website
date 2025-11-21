@@ -1,0 +1,128 @@
+.sherwani-section1{
+     display: flex;
+    justify-content: space-evenly;
+}
+.s{
+    width: 400px;
+     /* border: 3px solid rgb(167, 151, 8) ; */
+    height: 550px;
+    
+}
+.box1-sherwani-imag{
+    background-image: url(238808_4_5__20231018115701344_width_1024.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.box2-sherwani-imag{
+  background-image:url(258801_nw__4_5__20250217061546848_width_1024.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+     margin-left: 10px;
+     margin-right: 10px;
+     
+}
+.box3-sherwani-imag{
+background-image:url(247307__4_5__20241211092252578_width_1024.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+.box4-sherwani-imag{
+background-image:url(247303__4_5__20241024103736328_width_1024.jpg) ;
+background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+.box5-sherwani-imag{
+    background-image:url(248801_n__4_5__20240526082806254_width_1024.jpg) ;
+     background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+    
+}
+.product-price{
+    color: black;
+    font-size: large;
+    margin-top: 1px;
+}
+.pan{
+    margin-top: -20px;
+    margin-left: 13px;
+}
+
+/* ********************
+#################### */
+
+.sherwani-section2{
+     display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.sos{
+    width: 400px;
+     /* border: 3px solid rgb(167, 151, 8) ; */
+    height: 550px;
+}
+.box1-sherwani-imag1{
+    background-image:url(258802_nw__4_5__20250217061547579_width_1024.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box2-sherwani-imag2{
+  background-image:url(247302__4_5__20241110091129898_width_1024.jpg);
+  background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box3-sherwani-imag3{
+background-image:url(247304__4_5__20241024103739513_width_1024.jpg);
+ background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box4-sherwani-imag4{
+background-image:url(247306__4_5__20251009054555449_width_1024.jpg);
+
+   background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.box5-sherwani-imag5{
+    background-image:url(247305__4_5__20251009054549234_width_1024.jpg) ;
+     background-size: contain;
+    background-repeat: no-repeat;
+    height: 520px;
+    margin-left: 10px;
+     margin-right: 10px;
+}
+.product-price{
+    color: black;
+    font-size: 12px;
+    font-size: larger;
+    margin-top: 1px;
+}
+
+.pan{
+    margin-top: -20px;
+    margin-left: 13px;
+}
