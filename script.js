@@ -17,6 +17,7 @@ function initializeApp() {
     initProductHover();
     initNavbarScroll();
     initLazyLoading();
+    initAuthModal();
     updateCartCounter();
 }
 
@@ -826,8 +827,206 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ============================================
-// FORM VALIDATION (for future contact forms)
+// AUTH MODAL LOGIC
 // ============================================
+function initAuthModal() {
+    const signInBtn = document.querySelector('.nav-signin');
+    const authModal = document.getElementById('authModal');
+    const closeBtn = document.getElementById('authCloseBtn');
+    const choiceButtons = document.querySelectorAll('.choice-btn');
+    const signUpForm = document.getElementById('modalSignUpForm');
+    const loginForm = document.getElementById('modalLoginForm');
+
+    if (!signInBtn || !authModal || !signUpForm || !loginForm) {
+        return;
+    }
+
+    signInBtn.addEventListener('click', () => {
+        hydrateAuthView();
+        openAuthModal();
+    });
+
+    closeBtn?.addEventListener('click', closeAuthModal);
+    authModal.addEventListener('click', (event) => {
+        if (event.target === authModal) {
+            closeAuthModal();
+        }
+    });
+
+    choiceButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            showAuthView(button.dataset.choice);
+        });
+    });
+
+    signUpForm.addEventListener('submit', handleModalSignUp);
+    loginForm.addEventListener('submit', handleModalLogin);
+
+    signUpForm.addEventListener('input', () => setFormError('modalSignupError', ''));
+    loginForm.addEventListener('input', () => setFormError('modalLoginError', ''));
+}
+
+function openAuthModal() {
+    const authModal = document.getElementById('authModal');
+    if (authModal) {
+        authModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeAuthModal() {
+    const authModal = document.getElementById('authModal');
+    if (authModal) {
+        authModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+function hydrateAuthView() {
+    const hasAccount = Boolean(localStorage.getItem('illiyeenUser'));
+    const choiceBlock = document.getElementById('authChoice');
+
+    if (hasAccount) {
+        choiceBlock?.classList.add('hidden');
+        showAuthView('login');
+    } else {
+        choiceBlock?.classList.remove('hidden');
+        showAuthView('choice');
+    }
+}
+
+function showAuthView(view) {
+    const signUpForm = document.getElementById('modalSignUpForm');
+    const loginForm = document.getElementById('modalLoginForm');
+    const choiceBlock = document.getElementById('authChoice');
+
+    if (!signUpForm || !loginForm || !choiceBlock) {
+        return;
+    }
+
+    switch (view) {
+        case 'signup':
+            choiceBlock.classList.add('hidden');
+            signUpForm.classList.remove('hidden');
+            loginForm.classList.add('hidden');
+            break;
+        case 'login':
+            choiceBlock.classList.add('hidden');
+            signUpForm.classList.add('hidden');
+            loginForm.classList.remove('hidden');
+            break;
+        default:
+            choiceBlock.classList.remove('hidden');
+            signUpForm.classList.add('hidden');
+            loginForm.classList.add('hidden');
+    }
+}
+
+function handleModalSignUp(event) {
+    event.preventDefault();
+
+    const identifierInput = document.getElementById('modalSignupIdentifier');
+    const passwordInput = document.getElementById('modalSignupPassword');
+    const confirmInput = document.getElementById('modalSignupConfirm');
+
+    if (!identifierInput || !passwordInput || !confirmInput) {
+        return;
+    }
+
+    const identifier = identifierInput.value.trim();
+    const password = passwordInput.value.trim();
+    const confirmPassword = confirmInput.value.trim();
+
+    const errorMessage = validateSignUpFields(identifier, password, confirmPassword);
+    if (errorMessage) {
+        setFormError('modalSignupError', errorMessage);
+        showNotification(errorMessage, 'error');
+        return;
+    }
+
+    const user = { identifier, password };
+    localStorage.setItem('illiyeenUser', JSON.stringify(user));
+
+    setFormError('modalSignupError', '');
+    showNotification('সাইন আপ সফল! এখন লগইন করুন।', 'success');
+    showAuthView('login');
+}
+
+function handleModalLogin(event) {
+    event.preventDefault();
+
+    const phoneInput = document.getElementById('modalLoginPhone');
+    const passwordInput = document.getElementById('modalLoginPassword');
+
+    if (!phoneInput || !passwordInput) {
+        return;
+    }
+
+    const phone = phoneInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    if (!phone) {
+        const message = 'ফোন নম্বর লিখুন।';
+        setFormError('modalLoginError', message);
+        showNotification(message, 'error');
+        return;
+    }
+
+    const storedUser = JSON.parse(localStorage.getItem('illiyeenUser'));
+    if (!storedUser) {
+        const message = 'কোনও সাইন আপ তথ্য পাওয়া যায়নি।';
+        setFormError('modalLoginError', message);
+        showNotification(message, 'error');
+        return;
+    }
+
+    if (!identifiersMatch(phone, storedUser.identifier) || password !== storedUser.password) {
+        const message = 'ফোন নম্বর বা পাসওয়ার্ড ভুল হয়েছে।';
+        setFormError('modalLoginError', message);
+        showNotification(message, 'error');
+        return;
+    }
+
+    setFormError('modalLoginError', '');
+    showNotification('লগইন সফল হয়েছে!', 'success');
+    closeAuthModal();
+}
+
+function validateSignUpFields(identifier, password, confirmPassword) {
+    if (!identifier) {
+        return 'Username/Email ঘর খালি রাখা যাবে না।';
+    }
+
+    if (identifier.includes('@')) {
+        if (!validateEmail(identifier)) {
+            return 'সঠিক ইমেইল ফরম্যাট ব্যবহার করুন।';
+        }
+    } else if (identifier.length < 3) {
+        return 'ইউজারনেম অন্তত ৩ অক্ষরের হওয়া জরুরি।';
+    }
+
+    if (password.length < 8) {
+        return 'পাসওয়ার্ড কমপক্ষে ৮ অক্ষর হতে হবে।';
+    }
+
+    if (password !== confirmPassword) {
+        return 'পাসওয়ার্ড এবং কনফার্ম পাসওয়ার্ড মেলেনি।';
+    }
+
+    return '';
+}
+
+function identifiersMatch(inputValue, storedValue) {
+    return inputValue.toLowerCase() === storedValue.toLowerCase();
+}
+
+function setFormError(elementId, message) {
+    const target = document.getElementById(elementId);
+    if (target) {
+        target.textContent = message;
+    }
+}
+
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
