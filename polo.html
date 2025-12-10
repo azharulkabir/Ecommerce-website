@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polo Section</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="polo.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/polo.css">
 </head>
 <body class="polo-page">
     <header>
@@ -42,54 +42,17 @@
     </header>
 
     <main class="polo-content">
-           <div class = "polo-section1">
-    <div class="box1 po ">
-        <div class="box1-popic3"></div>
-        <div class="polos1">Platinum Shirt</div>
-         <div class="product-price">BDT 1,950</div>
-    </div>
-    <div class="box2 po">
-        <div class="box2-popic3"></div>
-        <div class="polos1">Platinum Shirt</div>
-         <div class="product-price">BDT 1,950</div>
-</div>
-    <div class="box3 po">
-        <div class="box3-popic3"></div>
-        <div class="polos1">Platinum Shirt</div>
-         <div class="product-price">BDT 1,950</div>
-    </div>
-    <div class="box4 po">
-        <div class="box4-popic3"></div>
-        <div class="polos1">Luxury Shirt</div>
-         <div class="product-price">BDT 1,950</div>
-    </div>
-    <div class="box5 po">
-        <div class="box5-popic3"></div>
-        <div class="polos1">Luxury Shirt</div>
-        <div class="product-price">BDT 1,850</div>
-    </div>
-</div>
-
-<!-- ********* -->
-<div class="polo-section2">
-    <div class="box 1 po1">
-        <div class="box1-popic2"></div>
-        <div class="pols">Luxury Shirt</div>
-         <div class="product-price">BDT 1,850</div>
-    </div>
-    <div class="box 2 popic">
-        <div class="box2-popic2"></div>
-        <div class="pols">Luxury Shirt</div>
-         <div class="product-price">BDT 1,950</div>
-    </div>
-    <div class="box 3 po1">
-        <div class="box3-popic2"></div>
-        <div class="pols">MAX Denim Shirt</div>
-         <div class="product-price">BDT 1,950</div>
-    </div>
-</div>
+        <h2 style="text-align: center; margin-bottom: 30px; font-size: 28px; color: #333;">Platinum Polo Shirt</h2>
+        <div class="polo-section1" id="platinumPoloSection">
+            <!-- Products will be loaded dynamically from API -->
+            <div style="text-align: center; padding: 40px; color: #666;">
+                <i class="fa-solid fa-spinner fa-spin" style="font-size: 24px; margin-bottom: 10px;"></i>
+                <p>Loading products...</p>
+            </div>
+        </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
+    <script src="/polo.js"></script>
 </body>
 </html>

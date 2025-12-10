@@ -287,47 +287,23 @@ function initCart() {
     });
 }
 
-function addToCart(productName) {
-    const existingItem = cart.find(item => item.name === productName);
+function addToCart(name, price, size, image) {
+    // Create a unique ID for the cart item based on name and size
+    const itemId = `${name}-${size}`;
+    const existingItem = cart.find(item => item.id === itemId);
     
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
         cart.push({
-            name: productName,
-            quantity: 1,
-            price: generatePrice(productName)
+            id: itemId, name, price, size, image,
+            quantity: 1
         });
     }
     
     saveCart();
     updateCartCounter();
     showNotification(`${productName} added to cart!`, 'success');
-}
-
-function generatePrice(productName) {
-    // Generate a realistic price based on product type
-    const basePrices = {
-        'panjabi': 3500,
-        'luxury': 4500,
-        'platinum': 5500,
-        'sahara': 3000,
-        'abaya': 4000,
-        'shirt': 2500,
-        'watch': 15000,
-        'jeans': 2000,
-        'sandals': 3000,
-        'perfume': 2500
-    };
-    
-    const name = productName.toLowerCase();
-    for (const [key, price] of Object.entries(basePrices)) {
-        if (name.includes(key)) {
-            return price + Math.floor(Math.random() * 1000);
-        }
-    }
-    
-    return 3000 + Math.floor(Math.random() * 2000);
 }
 
 function removeFromCart(index) {
@@ -388,7 +364,7 @@ function showCart() {
                     ${cart.map((item, index) => `
                         <div class="cart-item">
                             <div class="cart-item-info">
-                                <h4>${item.name}</h4>
+                                <h4>${item.name} ${item.size ? `(Size: ${item.size})` : ''}</h4>
                                 <p>৳${item.price.toLocaleString()} x ${item.quantity}</p>
                             </div>
                             <div class="cart-item-actions">
@@ -1066,4 +1042,3 @@ document.addEventListener('click', function(e) {
         closeCart();
     }
 });
-

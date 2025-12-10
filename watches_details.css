@@ -71,7 +71,7 @@ body.watches-page .panel {
 .watch-logo {
     height: 50px;
     width: 100%;
-    background-image: url(ILLIYEEN-Logo2.png);
+    background-image: url("ILLIYEEN-Logo2.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;

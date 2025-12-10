@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <script src="https://tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/product-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-left"></div>
+            <div class="nav-logo border">
+                <a href="/" class="logo-link" aria-label="ILLIYEEN home">
+                    <div class="logo"></div>
+                </a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-action nav-search border" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </button>
+                <button class="nav-action nav-signin border" type="button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Sign In</span>
+                </button>
+                <button class="nav-action nav-card border" type="button">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-text">Add to Bag</span>
+                </button>
+            </div>
+        </div>
+          <div class="panel">
+            <div class="panel-ops">
+                <p>Friday Offer</p>
+                <p>AW25 New Arrivals</p>
+                <p>Men</p>
+                <p>Women</p>
+                <p>Kids</p>
+                <p>Footwear</p>
+                <p>Accessories</p>
+                <p>Furniture</p>
+                <p>Apps</p>
+                <p>Fragrance</p>
+            </div>
+          </div>
+    </header>
+    <div class="container">
+        <div class="product-image">
+            <img id="product-img" src="" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1 id="product-name"></h1>
+            <p id="product-price"></p>
+            <button id="add-to-bag">ADD TO BAG</button>
+            <button id="find-in-store">FIND IN STORE</button>
+            <div class="details-section">
+                <h4>DETAILS</h4>
+                <ul id="product-details-list"></ul>
+            </div>
+            <div class="description-section">
+                <h4>DESCRIPTION</h4>
+                <p id="product-description"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/product-details.js"></script>
+</body>
+</html>
